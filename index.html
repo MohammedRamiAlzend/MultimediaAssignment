@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learn French</title>
+</head>
+<body>
+    <div>
+    <nav>
+        <div class="logo">
+            <img src="image/logo.svg" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#teacher">Teacher</a>
+            <a href="#contact">Contact</a>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+    <div id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <img src="image/slider image.webp" alt="Hero Image">
+        <div class="text">
+            <h1>Learn French the Fun Way!</h1>
+            <p>Discover interactive lessons and exciting games designed for kids.</p>
+            <div class="buttons">
+                <a href="#courses" class="cta-button">Let's go</a>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="AboutUs">
+        <div class="image-section">
+            <img src="image/LFAH_Home_Graphic_v2.webp" alt="Freelancer Illustration">
+        </div>
+        <div class="text-section">
+            <h1>Learn French</h1>
+            <p class="about-text">"Welcome to our French learning website! We offer you a comprehensive and enjoyable educational experience to learn French from beginner to advanced levels. Enjoy exclusive content including grammar lessons, vocabulary, interactive exercises, and tips to improve your conversation and pronunciation skills. Our goal is to help you achieve your linguistic ambitions with ease and flexibility."</p>
+        </div>
+    </div>
+    <div id="courses" class="container">
+        <h2 class="section-title">Our Courses</h2>
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="card-image">
+                    <img src="image/4.webp" alt="French Alphabet">
+                </div>
+                <div class="card-content">
+                    <h3>The Alphabet</h3>
+                    <p>Master the French alphabet and pronunciation</p>
+                    <a href="#" class="course-btn">Let's go</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="image/5.webp" alt="fruits and berries">
+                </div>
+                <div class="card-content">
+                    <h3>fruits and berries</h3>
+                    <p>Learn about fruits and berries in French</p>
+                    <a href="#" class="course-btn">Let's go</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="image/1.webp" alt="Talking About Occupations">
+                </div>
+                <div class="card-content">
+                    <h3>Talking About Occupations</h3>
+                    <p>Discuss different occupations in French</p>
+                    <a href="#" class="course-btn">Let's go</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="image/3.webp" alt="Conversation About Family">
+                </div>
+                <div class="card-content">
+                    <h3>Conversation About Family</h3>
+                    <p>Practice conversations about family in French</p>
+                    <a href="#" class="course-btn">Let's go</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="image/2.webp" alt="How to complain in French">
+                </div>
+                <div class="card-content">
+                    <h3>How to complain in French</h3>
+                    <p>Express complaints in French</p>
+                    <a href="#" class="course-btn">Let's go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="daily-tips" class="daily-tips-section">
+        <div class="image-daily-tips">
+            <img src="image/pexels-julia-m-cameron-4145153.webp" />
+            <div class="tips-content">
+                <h2 style="color: white;">Daily French Tip</h2>
+                <p id="tip-content" class="theme-text" style="color: white;">Loading today's tip...</p>
+                <button id="new-tip-btn">Show Another Tip</button>
+            </div>
+        </div>
+    </div>
+    <div id="teacher" class="teacher-section">
+        <h2 class="section-title">Our Teachers</h2>
+        <div class="teacher-carousel">
+            <div class="teacher active">
+                <div class="teacher-image">
+                    <img src="image/T1.webp" alt="Teacher 1">
+                </div>
+                <div class="teacher-info">
+                    <h3>John Hissona</h3>
+                    <p>Passages of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
+                </div>
+            </div>
+
+            <div class="teacher">
+                <div class="teacher-image">
+                    <img src="image/T3.webp" alt="Teacher 2">
+                </div>
+                <div class="teacher-info">
+                    <h3>Sarah Smith</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                </div>
+            </div>
+
+            <div class="teacher">
+                <div class="teacher-image">
+                    <img src="image/T2.webp" alt="Teacher 3">
+                </div>
+                <div class="teacher-info">
+                    <h3>Michael Doe</h3>
+                    <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose...</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn prev" id="prev">&#x276E;</button>
+                <button class="nav-btn next" id="next">&#x276F;</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div id="contact" class="footer-container">
+            <div class="footer-column">
+                <h3>Learn French</h3>
+                <p>We offer you a comprehensive and enjoyable educational experience to learn French from beginner to advanced levels. Enjoy exclusive content including grammar lessons, vocabulary, interactive exercises.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#teacher">Teacher</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h3>Newsletter</h3>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-column contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="location-icon">📍</i> Your Location Here</p>
+                <p><i class="phone-icon">📞</i> +963 9999999999</p>
+                <p><i class="email-icon">✉️</i> Learn-French@domain.com</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img width="32" height="32" src="https://img.icons8.com/fluency/48/youtube-play.png" alt="youtube-play"/></a>
+                    <a href="#" class="social-icon"><img width="32" height="32" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/></a>
+                    <a href="#" class="social-icon"><img width="32" height="32" src="https://img.icons8.com/3d-fluency/94/twitter-logo.png" alt="twitter-logo"/></a>
+                    <a href="#" class="social-icon"><img width="32" height="32" src="https://img.icons8.com/3d-fluency/94/linkedin-logo.png" alt="linkedin-logo"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Learn French. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="videoPlayer" controls>
+                <source src="videos" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script src="script.js" > </script>
+</body>
+</html>
+
