@@ -1,0 +1,11 @@
+# VS Code settings
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# System Files
+.DS_Store
+Thumbs.db 

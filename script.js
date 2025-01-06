@@ -74,33 +74,32 @@ nextBtn.addEventListener('click', () => {
 const modal = document.getElementById('videoModal');
 const closeModal = document.querySelector('.modal .close');
 const videoPlayer = document.getElementById('videoPlayer');
-const videoSource = videoPlayer.querySelector('source');
 const letsGoLinks = document.querySelectorAll('.card a');
 const videos = [
-    "videos/1.mp4",
-    "videos/2.mp4",
-    "videos/3.mp4",
-    "videos/4.mp4",
-    "videos/5.mp4"
+    "NJppSS3no1U",
+    "YOUR_VIDEO_ID_2",
+    "YOUR_VIDEO_ID_3",
+    "YOUR_VIDEO_ID_4",
+    "YOUR_VIDEO_ID_5"
 ];
 
 letsGoLinks.forEach((link, index) => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); 
-        videoSource.src = videos[index]; 
-        videoPlayer.load(); 
+        e.preventDefault();
+        videoPlayer.src = `https://www.youtube.com/embed/${videos[index]}`;
         modal.style.display = 'flex';
     });
 });
 
 closeModal.addEventListener('click', () => {
-    modal.style.display = 'none'; 
-    videoPlayer.pause(); 
+    modal.style.display = 'none';
+    videoPlayer.src = '';
 });
+
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-        modal.style.display = 'none'; 
-        videoPlayer.pause(); 
+        modal.style.display = 'none';
+        videoPlayer.src = '';
     }
 });
 const tips = [
