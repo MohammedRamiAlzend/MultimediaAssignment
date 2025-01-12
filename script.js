@@ -76,37 +76,30 @@ const closeModal = document.querySelector('.modal .close');
 const videoPlayer = document.getElementById('videoPlayer');
 const letsGoLinks = document.querySelectorAll('.card a');
 const videos = [
-    "./videos/1.mp4",
-    "./videos/2.mp4",
-    "./videos/3.mp4",
-    "./videos/4.mp4",
-    "./videos/5.mp4"
+    "NJppSS3no1U",
+    "YOUR_VIDEO_ID_2",
+    "YOUR_VIDEO_ID_3",
+    "YOUR_VIDEO_ID_4",
+    "YOUR_VIDEO_ID_5"
 ];
 
 letsGoLinks.forEach((link, index) => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('Loading video:', videos[index]);
-        videoPlayer.querySelector('source').src = videos[index];
-        videoPlayer.load();
+        videoPlayer.src = `https://www.youtube.com/embed/${videos[index]}`;
         modal.style.display = 'flex';
-        videoPlayer.play().catch(error => {
-            console.log('Video playback error:', error);
-        });
     });
 });
 
 closeModal.addEventListener('click', () => {
     modal.style.display = 'none';
-    videoPlayer.pause();
-    videoPlayer.currentTime = 0;
+    videoPlayer.src = '';
 });
 
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = 'none';
-        videoPlayer.pause();
-        videoPlayer.currentTime = 0;
+        videoPlayer.src = '';
     }
 });
 const tips = [

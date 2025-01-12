@@ -398,11 +398,10 @@ nav .menu a:hover::after {
     max-height: 90vh;
 }
 
-.modal-content video {
+.modal-content iframe {
     width: 100%;
-    height: auto;
-    max-height: 80vh;
-    background: #000;
+    height: 675px;
+    border: none;
 }
 
 .modal .close {
@@ -417,13 +416,15 @@ nav .menu a:hover::after {
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+    .modal-content iframe {
+        height: 56.25vw;
+    }
+}
+
 @media (max-width: 768px) {
     .modal-content {
         width: 98%;
-    }
-    
-    .modal-content video {
-        max-height: 70vh;
     }
 }
 
