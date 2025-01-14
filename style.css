@@ -396,7 +396,6 @@ nav .menu a:hover::after {
     max-width: 1200px;
     width: 95%;
     max-height: 90vh;
-     transform: rotateY(180deg);
 }
 
 .modal-content iframe {
