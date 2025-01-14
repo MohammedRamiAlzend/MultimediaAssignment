@@ -76,11 +76,11 @@ const closeModal = document.querySelector('.modal .close');
 const videoPlayer = document.getElementById('videoPlayer');
 const letsGoLinks = document.querySelectorAll('.card a');
 const videos = [
-    "NJppSS3no1U",
-    "iX7Go8kCDyU",
-    "bXo-LIBxqqg",
-    "tIQEAN0sWjU",
-    "IPHPI737bpI"
+    "82aGO_zxeXY",
+    "-mzCev13vDc",
+    "5Go8Naf5QEs",
+    "7VxwFT50x-c",
+    "jau7KVWPWLw"
 ];
 
 letsGoLinks.forEach((link, index) => {
