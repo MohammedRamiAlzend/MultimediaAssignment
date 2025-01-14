@@ -80,7 +80,7 @@ const videos = [
     "-mzCev13vDc",
     "5Go8Naf5QEs",
     "7VxwFT50x-c",
-    "jau7KVWPWLw"
+    "jau7KVWPWLw",
 ];
 
 letsGoLinks.forEach((link, index) => {
